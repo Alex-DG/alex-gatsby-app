@@ -127,7 +127,7 @@ export const defaultOptions = {
   },
   manualParticles: [],
   motion: {
-    disable: false,
+    disable: true,
     reduce: {
       factor: 4,
       value: true,
@@ -265,7 +265,7 @@ export const defaultOptions = {
     number: {
       density: {
         enable: true,
-        area: 800,
+        area: 900,
         factor: 1000,
       },
       limit: 0,
