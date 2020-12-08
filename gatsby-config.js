@@ -7,7 +7,6 @@ module.exports = {
         trackingId: "G-XE84EHME5K",
       },
     },
-    "gatsby-plugin-offline",
     "gatsby-plugin-typescript"
   ],
 };
