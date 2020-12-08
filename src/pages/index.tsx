@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 import { useTransition, animated, config } from 'react-spring'
 import styled, { ThemeProvider } from 'styled-components'
-import App from '../components/App'
 
+import App from '../components/App'
 import Loader from '../components/Loader'
 import Particles from '../components/Particles'
 
@@ -44,6 +44,7 @@ const IndexPage = () => {
   return (
     <ThemeProvider theme={theme === LIGHT_THEME ? lightTheme : darkTheme}>
       <GlobalStyles />
+
       <main>
         {transitions.map(({ item, props, key }) => {
           const view = slides[item]
@@ -60,9 +61,10 @@ const IndexPage = () => {
             </AnimatedDiv>
           )
         })}
-
-        <Particles />
       </main>
+
+      {/** Background! */}
+      <Particles />
     </ThemeProvider>
   )
 }

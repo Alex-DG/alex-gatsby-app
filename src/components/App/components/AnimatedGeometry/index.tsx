@@ -2,7 +2,9 @@ import React, { Suspense, useRef, useState } from 'react'
 import { Canvas, useFrame, useLoader } from 'react-three-fiber'
 import * as THREE from 'three'
 
-// @ts-ignore
+const logo = require('../../../../images/react_light.png')
+
+//@ts-ignore
 import { useSpring, a } from 'react-spring/three'
 
 import { perlin3 } from './noise'
@@ -10,10 +12,7 @@ import { perlin3 } from './noise'
 import Controls from './components/Controls'
 
 const Shape = () => {
-  const texture = useLoader(
-    THREE.TextureLoader,
-    '../../../../images/react_light.png'
-  )
+  const texture = useLoader(THREE.TextureLoader, logo)
 
   const [expand, setExpand] = useState(true)
 
@@ -47,7 +46,7 @@ const Shape = () => {
   const handleExpand = () => setExpand(!expand)
 
   // React spring expand animation
-  const { scale }: { scale: any } = useSpring({
+  const { scale }: { scale: number[] } = useSpring({
     scale: expand ? [1.4, 1.4, 1.4] : [1, 1, 1],
   })
 

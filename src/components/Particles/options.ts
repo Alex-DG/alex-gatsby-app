@@ -265,7 +265,7 @@ export const defaultOptions = {
     number: {
       density: {
         enable: true,
-        area: 900,
+        area: 1000,
         factor: 1000,
       },
       limit: 0,

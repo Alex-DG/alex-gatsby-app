@@ -8,9 +8,15 @@ import {
   FaWordpress,
 } from 'react-icons/fa'
 
-import { links } from '../../../../../../config/data'
-
 import { SocialsContainer } from './styles'
+
+const links = {
+  github: 'https://github.com/alex-dg',
+  linkedin: 'https://www.linkedin.com/in/alexandre-di-guida-17650698/',
+  twitter: 'https://twitter.com/Alex_dg_uk',
+  stackoverflow: 'https://stackoverflow.com/users/2493252/alexdg',
+  wordpress: 'https://scottish-escapes.com/',
+}
 
 const { github, linkedin, twitter, stackoverflow, wordpress } = links
 

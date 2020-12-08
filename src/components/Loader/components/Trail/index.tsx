@@ -1,7 +1,15 @@
 import React from 'react'
 import { useTrail, animated } from 'react-spring'
 
-const Trail = ({ open, children, ...props }: any) => {
+interface ITrail
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
+  open: boolean
+}
+
+const Trail = ({ open, children, ...props }: ITrail) => {
   const items = React.Children.toArray(children)
 
   const trail = useTrail(items.length, {

@@ -6,6 +6,8 @@ import Socials from './components/Socials'
 
 import { ProfileContainer } from './styles'
 
+const image = require('../../../../images/me.jpg')
+
 const fadeInProps = {
   delay: 100,
   transitionDuration: 800,
@@ -35,12 +37,7 @@ const Profile = () => {
   return (
     <ProfileContainer {...fadeInProps} isLoaded={loaded}>
       <figure>
-        <img
-          id="pf-img"
-          src={'../../../../images/me.jpg'}
-          alt="Alex DG"
-          loading="lazy"
-        />
+        <img id="pf-img" src={image} alt="Alex" loading="lazy" />
       </figure>
 
       <Details />

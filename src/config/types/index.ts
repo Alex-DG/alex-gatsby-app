@@ -1,7 +1,3 @@
-export type LayoutProps = {
-  children: React.ReactNode
-}
-
 export type GlobalStyleProps = {
   theme: {
     background: string
@@ -14,9 +10,4 @@ export type GlobalStyleProps = {
 
 export type LoaderProps = {
   onClose: () => void
-}
-
-export type WindowSize = {
-  width?: number
-  height?: number
 }

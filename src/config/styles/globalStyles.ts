@@ -2,8 +2,12 @@ import { createGlobalStyle } from 'styled-components'
 
 import { GlobalStyleProps } from '../types'
 
+import '../../fonts/index.css'
+
 export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
   body {
+    margin: 0;
+
     color: ${({ theme }) => theme.text};
 
     .social-link {

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Movement';
+  src: url('./Movement/MovementV.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('./SpaceGrotesk/SpaceGrotesk-Regular.woff');
+}
